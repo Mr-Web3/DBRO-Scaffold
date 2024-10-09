@@ -1,6 +1,6 @@
-# DBRO Scaffold
+# DBRO NextJS-Scaffold WithWagmi
 
-This is a Next.js project bootstrapped with `create-next-app`, customized for the Decentral Bros (DBRO) project. It includes Web3 integration, a responsive header with social icons, and other custom components.
+This is a Next.js project bootstrapped with `create-next-app`, customized for the Decentral Bros (DBRO) project. It includes Web3 integration using wagmi, a responsive header with social icons, and other custom components.
 
 ## Getting Started
 
@@ -41,7 +41,7 @@ Follow these steps to set up the DBRO scaffold on your local machine:
 
 ## Key Features
 
-- Web3 integration with wallet connection (configured for Base mainnet)
+- Web3 integration with wallet connection using wagmi (configured for Base mainnet)
 - Responsive header with navigation and social icons
 - Custom styling using Tailwind CSS
 - TypeScript support for improved developer experience
@@ -70,6 +70,17 @@ To add support for more wallets:
 
 1. Update the Web3Modal configuration in your project.
 2. Modify the `wagmi.config.ts` file to include the new wallet connectors.
+
+## Wagmi Integration
+
+This project uses [wagmi](https://wagmi.sh/), a collection of React Hooks for Ethereum, to handle wallet connections and interactions with the blockchain. Wagmi provides a simple and efficient way to integrate Web3 functionality into your React application.
+
+Key wagmi features used in this project:
+- Wallet connection and disconnection
+- Account and balance information retrieval
+- Network switching and configuration
+
+For more information on how to use wagmi in this project, refer to the `components/Header.tsx` file and the wagmi documentation.
 
 ## Learn More
 
