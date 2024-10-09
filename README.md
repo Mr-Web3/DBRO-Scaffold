@@ -8,7 +8,7 @@ Follow these steps to set up the DBRO scaffold on your local machine:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Mr-Web3/dbro-scaffold.git
+   git clone https://github.com/Mr-Web3/DBRO-Scaffold
    ```
 
 2. Navigate to the project directory:
