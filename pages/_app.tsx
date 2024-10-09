@@ -1,6 +1,16 @@
-import "@/styles/globals.css";
-import type { AppProps } from "next/app";
+import type { AppProps } from 'next/app'
+import dynamic from 'next/dynamic'
+import '@/styles/globals.css'
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+const Web3ModalProvider = dynamic(
+  () => import('@/components/Web3ModalProvider'), // This is the Web3ModalProvider
+  { ssr: false } // This is the server side rendering
+)
+
+export default function App({ Component, pageProps }: AppProps) { // This is the App component
+  return (
+    <Web3ModalProvider>
+      <Component {...pageProps} />
+    </Web3ModalProvider>
+  )
 }
