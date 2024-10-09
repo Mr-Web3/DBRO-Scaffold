@@ -1,4 +1,4 @@
-# DBRO NextJS-Scaffold WithWagmi
+# DBRO NextJS-Scaffold With Wagmi
 
 This is a Next.js project bootstrapped with `create-next-app`, customized for the Decentral Bros (DBRO) project. It includes Web3 integration using wagmi, a responsive header with social icons, and other custom components.
 
